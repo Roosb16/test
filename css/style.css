@@ -1,0 +1,448 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@100..900&family=Rubik+Dirt&display=swap');
+
+/* algemeen */
+
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+h1, h2, h3{
+    font-family: "Rubik Dirt";
+    font-style: normal;
+}
+
+h1, h3{
+    color: #EADFC9;
+}
+
+h1 {
+    font-size: 7em;
+}
+
+h2 {
+    font-size: 3.5em;
+    color: #577168;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+p {
+    font-family: "Encode Sans SC";
+    font-size: 1.1em;
+    padding: 0.5em 0em;
+    color: #577168;
+}
+
+section{
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+
+a:hover{
+    color: #93ADA4;
+}
+
+button:hover{
+    background-color: #F3A14B;
+    border: 2px #C16F19; 
+    border-style: solid;
+    color: #C16F19;
+}
+
+/* header */
+
+#afleveringen{
+    background-image: url(/img/background-afleveringen.png);
+}
+
+#afleveringen section{
+    background-color: #C86232;
+    width: 45%;
+    text-align: left;
+    margin: 3em;
+    border-radius: 1em;
+    height: 17em;
+    padding: 1.5em;
+    margin-top: 38em;
+}
+
+#afleveringen p{
+    font-family: "Encode Sans SC";
+    color: #AB4515;
+    margin: auto;
+    font-weight: 600;
+    text-align: left;
+    padding-top: 0.5em;
+    font-size: 1.3em;
+}
+
+#afleveringen button{
+    text-decoration: none;
+    background-color: #AB4515;
+    padding: 1em 3em;
+    color: #EADFC9;
+    font-family: "Encode Sans SC";
+    font-size: 1.1em;
+    font-weight: 700;
+    margin-top: 1.5em;
+    border: none;
+    border-radius: 0.3em;
+    transition: all 350ms ease-in-out;
+}
+
+#index{
+    background-image: url(/img/background-home.png);
+}
+
+#index p{
+    font-family: "Encode Sans SC";
+    color: #93ADA4;
+    margin: auto;
+    font-weight: 600;
+    text-align: left;
+    padding-top: 0.5em;
+    font-size: 1.3em;
+}
+
+#index section{
+    background-color: #577168;
+    width: 40%;
+    text-align: left;
+    margin: 3em;
+    border-radius: 1em;
+    height: 17em;
+    padding: 1.5em;
+    margin-top: 38em;
+}
+
+#index button{
+    text-decoration: none;
+    background-color: #93ADA4;
+    padding: 1em 3em;
+    color: #EADFC9;
+    font-family: "Encode Sans SC";
+    font-size: 1.1em;
+    font-weight: 700;
+    margin-top: 1.5em;
+    border: none;
+    border-radius: 0.3em;
+    transition: all 350ms ease-in-out;
+}
+
+header {
+    background-image: url(/img/background-overons.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 0.3em;
+}
+
+header p {
+    font-family: "Encode Sans SC";
+    color: #C16F19;
+    margin: auto;
+    font-weight: 600;
+    text-align: left;
+    padding-top: 0.5em;
+    font-size: 1.3em;
+}
+
+header section{
+    background-color: #F3A14B;
+    width: 34%;
+    text-align: left;
+    margin: 3em;
+    border-radius: 1em;
+    height: 17em;
+    padding: 1.5em;
+    margin-top: 38em;
+}
+
+header section button {
+    text-decoration: none;
+    background-color: #C16F19;
+    padding: 1em 5em;
+    color: #EADFC9;
+    font-family: "Encode Sans SC";
+    font-size: 1.1em;
+    font-weight: 700;
+    margin-top: 1.5em;
+    border: none;
+    border-radius: 0.3em;
+    transition: all 350ms ease-in-out;
+}
+
+header img {
+    width: 5%;
+}
+
+header div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em 3em;
+}
+
+/* navigatie */
+
+nav ul a {
+    text-decoration: none;
+    display: block;
+    padding: 0.5em 1em;
+    font-family: "Encode Sans SC";
+    font-weight: 600;
+    color: #EADFC9;
+    font-size: 1.2em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    justify-content: right;
+}
+
+.huidige {
+    color: #F3A14B;
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+/* main */
+
+main section {
+    display: flex;
+    margin: 10em 1em;
+}
+
+span {
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+/* afleveringen */
+
+.afleveringen{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.afleveringen div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+main article{
+    display: flex;
+    flex-direction: row;
+    width: 45%;
+    border-radius: 1em;
+    padding: 1em;
+    margin: 1em;
+}
+
+.afleveringen article:nth-child(3n-2) {
+    background-color: #577168;
+    color: #EADFC9;
+    text-align: left;
+}
+
+.afleveringen article:nth-child(3n-1) {
+    background-color: #AB4515;
+    color: #EADFC9;
+    text-align: left;
+}
+
+.afleveringen article:nth-child(3n) {
+    background-color: #C16F19;
+    color: #EADFC9;
+    text-align: left;
+}
+
+.card p {
+    color: #EADFC9;
+}
+
+/* overlap */
+
+.overlap a{
+    text-decoration: none;
+    background-color: #F3A14B;
+    padding: 1em 2em;
+    color: #EADFC9;
+    font-family: "Encode Sans SC";
+    font-size: 1.1em;
+    font-weight: 700;
+    margin-top: 4em;
+    border: none;
+    border-radius: 0.3em;
+    transition: all 350ms ease-in-out;
+}
+
+.overlap div {
+    background-color: #C16F19;
+    z-index: 1;
+    position: relative;
+    width: 55%;
+    padding: 3em 1.5em;
+    border-radius: 0.5em;
+    top: 80px;
+    height: 100%;
+    color: #EADFC9;
+}
+
+.overlap h2 {
+    color: #EADFC9;
+}
+
+.overlap p {
+    color: #EADFC9;
+}
+
+.afbeelding{
+    display: flex;
+    width: 60%;
+}
+
+
+/* voledig */
+
+.voledig {
+    background-color: #C86232;
+    border-radius: 0.5em;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 15em;
+    padding-top: 2em;
+}
+
+.voledig h2 {
+    color: #EADFC9;
+}
+
+.voledig p {
+    color: #EADFC9;
+}
+
+.tegels {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1em;
+    width: 100%;
+}
+
+.tegels div {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5em;
+    border-radius: 0.3em;
+    z-index: 2;
+    text-align: left;
+    height: 10em;
+    padding: 1.5em;
+    margin-top: 3em;
+    justify-content: center;
+    background-color: #AB4515;
+    width: 28%;
+}
+
+/* Omgedraaid */
+.omgedraaid{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.omgedraaid img{
+    margin-left: 10em;
+    width: 45vw;
+}
+
+.omgedraaid div{
+    margin: 0em 5em;
+    margin-right: 10em;
+}
+
+/* ruimte */
+
+.ruimte{
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+}
+
+.ruimte img{
+    margin-right: 10em;
+    width: 45vw;
+}
+
+.ruimte div{
+    margin: 0em 5em;
+    margin-left: 10em;
+}
+
+/* overlap andersom */
+
+.overlap-omgedraaid div{
+    background-color: #C16F19;
+    z-index: 1;
+    position: relative;
+    width: 55%;
+    padding: 3em 1.5em;
+    border-radius: 0.5em;
+    top: 80px;
+    height: 100%;
+    color: #EADFC9;
+}
+
+.overlap-omgedraaid p{
+    color: #EADFC9;
+}
+
+.overlap-omgedraaid h2{
+    color: #EADFC9;
+}
+
+.overlap-omgedraaid{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+/* footer */
+
+footer img {
+    width: 10%;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: #577168;
+    padding: 2em;
+    color: #EADFC9;
+}
+
+footer a{
+    text-decoration: none;
+    display: block;
+    font-family: "Encode Sans SC";
+    font-weight: 400;
+    color: #EADFC9;
+    font-size: 1em;
+}
+
+footer ul{
+    list-style-type: none;
+    padding-left: 0;
+}
